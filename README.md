@@ -1,9 +1,9 @@
-# Managing Variance Theories: Application of the Evidence Evolution Framework
+# Managing Empirical Evidence: Application of the Evidence Evolution Framework
 
 [![GitHub](https://img.shields.io/github/license/JulianFrattini/mvt-demo)](./LICENSE)
 
-This repository demonstrates managing variance theories in software engineering.
-It applies the evidence evolution framework to several cases of software engineering research agendas consisting of multiple pieces of evidence.
+This repository demonstrates how to manage variance theories in software engineering (SE) research.
+It applies the evidence evolution framework to several cases of SE research agendas consisting of multiple pieces of evidence.
 
 ## Artifact Content
 
@@ -16,7 +16,7 @@ An individual piece of empirical, quantitative evidence $e:=E(h, d, m)$ consists
 
 Given an initial piece of evidence $e_1=E(h_1, d_1, m_1)$, follow-up studies can contribute related evidence that falls into one of three categories.
 
-![Evidence evolution framework](material/graphs/mvt-framework.png)
+![Evidence evolution framework](material/graphs/framework/mvt-method-process.png)
 
 The full definition of empirical, quantitative evidence as well as the framework are described in detail in the scientific manuscript that this repository supports.
 
@@ -25,17 +25,17 @@ The full definition of empirical, quantitative evidence as well as the framework
 The repository contains the following directories and files:
 
 ```
-├── material : directory of additional material
-│   ├── dags : directory of basic directed, acyclic graphs (DAGs)
-│   └── graphs : directory of custom graphs
-│       └── mvt-framework.graphml : visualization of the evidence evolution framework (also available in pdf and png format)
-└── studies : collection of research agendas
-    └── requirements-quality : studies on the impact of passive voice on domain modeling
+├── material: directory of additional material
+│   ├── dags: directory of basic directed, acyclic graphs (DAGs) used for demonstration
+│   └── graphs: directory of custom graphs
+│       ├── evolution: example of an evidence evolution graph
+│       └── framework: visualization of the relationships between pieces of evidence
+└── studies: collection of research agendas
+    ├── requirements-quality: studies on the impact of passive voice on domain modeling
+    └── text-coverage: studies on the impact of test coverage on test suite effectiveness
 ```
 
-Each case study in the *studies* directory contains a separate `README.md` file that explains the context and involved studies better.
-For now, the repository contains only one case study.
-We plan to expand this in the future.
+More elaborated case studies in the *studies* directory contains a separate `README.md` file that explains the context and involved studies better.
 
 ## System Requirements and Setup
 
@@ -66,5 +66,5 @@ Run the `Rmd` notebooks to interact with the data and analyses yourself, or view
 
 ## License
 
-Copyright © 2024 Julian Frattini.
+Copyright © 2026 Julian Frattini.
 This work (source code) is licensed under the [MIT License](./LICENSE).
